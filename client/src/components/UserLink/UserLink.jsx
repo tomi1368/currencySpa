@@ -6,6 +6,7 @@ import { ToastContainer, toast } from "react-toastify";
 import AuthContext from "../../context/authContext";
 import "react-toastify/dist/ReactToastify.css";
 import "./UserLink.scss"
+import LogOut from "../LogOut/LogOut";
 const UserLink = () => {
   const [link,setLink] = useState(null)
   const {auth} = useContext(AuthContext)
@@ -28,6 +29,7 @@ const UserLink = () => {
   }
   return (
     <>
+    <LogOut></LogOut>
     <ToastContainer></ToastContainer>
     <Formik
     initialValues={initialValue}

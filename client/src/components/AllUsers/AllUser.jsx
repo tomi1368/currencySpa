@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { fetchUsers } from "./usersRequest/usersRequest";
 import "./AllUser.scss"
+import LogOut from "../LogOut/LogOut";
 const AllUser = () => {
   const [users, setUsers] = useState([]);
 
@@ -18,6 +19,7 @@ const AllUser = () => {
   }, []);
   return (
     <>
+    <LogOut></LogOut>
     <h2 className="table-title">Users</h2>
     {users && 
     <table class="customTable">
