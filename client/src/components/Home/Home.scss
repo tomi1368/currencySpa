@@ -1,0 +1,28 @@
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    &-logo{
+        height: 5rem;
+    }
+    &-links{
+        display: flex;
+        gap: 15px;
+        &__link{
+            padding: 10px 20px;
+            background-color: #f8b334;
+            color:#000;
+        }
+    }
+}
+.main{
+    height: calc(100vh - 10rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    &-img{
+        height: 20rem;
+    }
+}

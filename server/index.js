@@ -2,7 +2,7 @@ require("dotenv").config()
 const express = require("express")
 const app = express()
 const cors = require("cors")
-const PORT = process.env.PORT || 6000
+const PORT = process.env.PORT || 6002
 const {connectDB} = require("./db/db")
 const referrerRouter = require("./routes/referrerRouter")
 const userRouter =require("./routes/userRouter")
@@ -14,7 +14,7 @@ app.use("/user",userRouter)
 app.use("/referrer",referrerRouter)
 
 app.listen(PORT,(req,res)=>{
-    res.send(`Listening PORT ${PORT}`)
+    console.log(`Listening PORT ${PORT}`)
 })
 
 process.on("unhandledRejection",(err,promise)=>{

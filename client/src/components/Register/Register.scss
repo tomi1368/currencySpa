@@ -1,0 +1,24 @@
+.register{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    &-form{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 50px;
+        background-color: #d06601;
+        width: 400px;
+        &__field{
+            padding: 10px 20px;
+        }
+        button[type="submit"]{
+            padding: 10px 25px;
+            background-color: #f8b334;
+            color:#000;
+            cursor: pointer;
+            font-weight: 700;
+        }
+    }
+}
